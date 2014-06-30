@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>571</width>
+    <height>352</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="DataEntry">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>371</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Data Entry</string>
+    </property>
+    <widget class="QPushButton" name="addColBtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Add New Collection</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addCopyBtn">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Add New Copy</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addBorrowerBtn">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Add Borrower</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="operation">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>371</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Daily Operation</string>
+    </property>
+    <widget class="QPushButton" name="borrowBtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Borrow Copy</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="returnBtn">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Return Copy</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="statusBtn">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Change Status</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Report">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>241</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Report</string>
+    </property>
+    <widget class="QPushButton" name="listColBtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>All Collections</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="listCopyBtn">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>All Copies</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="listBorrowBtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>All Borrowers And Overdue</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>571</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionAdd_New_Collection"/>
+    <addaction name="actionAdd_New_Copy"/>
+    <addaction name="actionAdd_New_Borrower"/>
+    <addaction name="actionBorrow_A_Copy"/>
+    <addaction name="actionReturn_A_Copy"/>
+    <addaction name="actionChange_Status"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>Theme</string>
+    </property>
+    <addaction name="actionTheme_1"/>
+    <addaction name="actionTheme_2"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionProject_Team"/>
+    <addaction name="actionProject_Brief"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Report</string>
+    </property>
+    <addaction name="actionShow_Collections"/>
+    <addaction name="actionShow_Copies"/>
+    <addaction name="actionShow_Borrowers"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp_2">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuHelp_2"/>
+  </widget>
+  <action name="actionAdd_New_Collection">
+   <property name="text">
+    <string>Add New Collection</string>
+   </property>
+  </action>
+  <action name="actionAdd_New_Copy">
+   <property name="text">
+    <string>Add New Copy</string>
+   </property>
+  </action>
+  <action name="actionBorrow_A_Copy">
+   <property name="text">
+    <string>Borrow A Copy</string>
+   </property>
+  </action>
+  <action name="actionReturn_A_Copy">
+   <property name="text">
+    <string>Return A Copy</string>
+   </property>
+  </action>
+  <action name="actionTheme_1">
+   <property name="text">
+    <string>Theme 1</string>
+   </property>
+  </action>
+  <action name="actionTheme_2">
+   <property name="text">
+    <string>Theme 2</string>
+   </property>
+  </action>
+  <action name="actionProject_Team">
+   <property name="text">
+    <string>Project Team</string>
+   </property>
+  </action>
+  <action name="actionProject_Brief">
+   <property name="text">
+    <string>Project Brief</string>
+   </property>
+  </action>
+  <action name="actionShow_Collections">
+   <property name="text">
+    <string>Show Collections</string>
+   </property>
+  </action>
+  <action name="actionShow_Copies">
+   <property name="text">
+    <string>Show Copies</string>
+   </property>
+  </action>
+  <action name="actionShow_Borrowers">
+   <property name="text">
+    <string>Show Borrowers</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionChange_Status">
+   <property name="text">
+    <string>Change Status</string>
+   </property>
+  </action>
+  <action name="actionAdd_New_Borrower">
+   <property name="text">
+    <string>Add New Borrower</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

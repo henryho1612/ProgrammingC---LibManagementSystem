@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Assignment2 Report</title>
+	</head>
+	
+	<body>
+		<div id="wrapper" style="width:900px; height:auto; margin:auto;">
+			<div id="banner" style="color:red; border-style:solid; border-color:#98bf21;">
+				<h1 align="center"> ASSIGNMENT REPORT</h1>
+			</div>
+			
+			<div id="tableContents" style="margin-top:5px;">
+				<h2 style="color:#da1337; font-style:italic;">Table of Contents</h2>
+				<ul>
+					<li><a href="#intro" style="text-decoration: none; color:#3EA2FA;" onMouseOver="this.style.color='#F57120'" onMouseOut="this.style.color='#3EA2FA'">Introduction</a></li>
+					<li><a href="#ref" style="text-decoration: none; color:#3EA2FA;" onMouseOver="this.style.color='#F57120'" onMouseOut="this.style.color='#3EA2FA'">Project Referencee</a></li>
+					<li><a href="#howto" style="text-decoration: none; color:#3EA2FA;" onMouseOver="this.style.color='#F57120'" onMouseOut="this.style.color='#3EA2FA'">How To Build/Install</a></li>
+					<li><a href="#implement" style="text-decoration: none; color:#3EA2FA;" onMouseOver="this.style.color='#F57120'" onMouseOut="this.style.color='#3EA2FA'">Implementation</a></li>
+					<li><a href="#feature" style="text-decoration: none; color:#3EA2FA;" onMouseOver="this.style.color='#F57120'" onMouseOut="this.style.color='#3EA2FA'">Additional Features</a></li>
+					<li><a href="#citation" style="text-decoration: none; color:#3EA2FA;" onMouseOver="this.style.color='#F57120'" onMouseOut="this.style.color='#3EA2FA'">References</a></li>
+				</ul>
+			</div>
+			
+			<br/>
+			
+			<div id="content">
+				<h2 id="intro">INTRODUCTION</h2>
+				<hr style="color:#999999"/>
+				<p>
+					This report will present you a way to develop a <span style="color:#E08D5A; font-style:italic;">Multimedia Management System</span>. For one of the most important
+					part, the report will give some ideas on how to set up and run a system. Recently, this system is only compatitable with Windows but it is going to be 
+					a cross-platform system: <span style="color:#8A8A5C; font-style:italic;">Window</span>, <span style="color:#8A8A5C; font-style:italic;">Mac</span> and <span style="color:#8A8A5C; font-style:italic;">Linux</span>. Next, it
+					will be the implementation part, which contains 3 sub menus: <span style="color:#8A8A5C; font-style:italic;">UML Diagrams</span>, <span style="color:#8A8A5C; font-style:italic;">Data Structures</span>, and <span style="color:#8A8A5C; font-style:italic;">Algorithm</span>. Basically, this part would give you ideas of some needed functionalities
+					a collection system should have. Finally, it is the part that our development team can show what we have done to make our system one of the best fit in your organization.
+				</p>
+				
+				<h2 id="ref">PROJECT REFERENCE</h2>
+				<hr style="color:#999999"/>
+				<table style="width:500px;">
+					<tr>
+						<td colspan="2" style="text-align:left;"><b><i><u>COSC2131 - Programing Using C++</u></i></b></td>
+					</tr>
+					<tr>
+						<th style="text-align:left; border-top: 1px dashed;">Assignment Number:</th>
+						<td style="text-align:left; border-top: 1px dashed;">2</td>
+					</tr>
+					<tr>
+						<th style="text-align:left; border-top: 1px dashed;">Due Date:</th>
+						<td style="text-align:left; border-top: 1px dashed;">December 25th, 2013</td>
+					</tr>
+					<tr>
+						<th style="text-align:left; border-top: 1px dashed;">Assignment Name:</th>
+						<td style="text-align:left; border-top: 1px dashed;">Multimedia Library collections and services System </td>
+					</tr>
+					<tr>
+						<th style="text-align:left; border-top: 1px dashed;">Program's Name:</th>
+						<td style="text-align:left; border-top: 1px dashed;">HT MultiCollection Management System (HT-MMS)</td>
+					</tr>
+					<tr>
+						<th style="text-align:left; border-top: 1px dashed;">Lecturer:</th>
+						<td style="text-align:left; border-top: 1px dashed;">Ashok Kumar Veerasamy</td>
+					</tr>
+					<tr>
+						<th style="text-align:left; border-top: 1px dashed;">Group Number:</th>
+						<td style="text-align:left; border-top: 1px dashed;">6</td>
+					</tr>
+					<tr>
+						<th style="text-align:left; border-bottom: 1px dashed; border-top: 1px dashed;">Members:</th>
+						<td style="text-align:left; border-bottom: 1px dashed; border-top: 1px dashed;"
+							<ul>
+								<li>Hoang Ngoc Thanh - s3275145 - Leader</li>
+								<li>Ho Xuan Hieu - s3357671</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				
+				<h2 id="howto">HOW TO BUILD/INSTALL</h2>
+				<hr style="color:#999999"/>
+				
+				<h2 id="implement">IMPLEMENTATION</h2>
+				<hr style="color:#999999"/>
+				<h3>UML Diagram</h3>
+					<img src="images/umlDiagram.jpg" alt="UML Diagram" style="width:900px; height:500px;"/>
+					<p style="text-align:center;">Figure 1: UML Diagram of a system</p>
+				<p>
+					For this system, we have used QT, one of the engines for developing GUI in C++, as our main engine. Obviously, it is going with the MVC pattern. Therefore, it should be easy
+					to maintain or expand the system for future usage. From the figure above, it somehow shows some basic classes within a system and how they interact with each other. There is a file which name is
+					main <i>"mainwindow.cpp"</i>, will take care almost all activities of the system. It will play a role as the manager, which will invoke methods/functions for a particular action. Moreover, 
+					it does store 3 main lists that will be using in any actions: borrowers, cols (stands for collections) and copies (a copy of a collection). For more information about classes/methods, please follow the
+					following path <span style="color:pink; font-style:italic;">Assignment2/html</span>and run the <span style="color:#8A8A5C; font-style:italic;">"index.html"</span> file. <b>Notice: </b> these html files 
+					auto-generated by <a href="http://www.stack.nl/~dimitri/doxygen/‎" style="text-decoration: none; color:#3EA2FA;" onMouseOver="this.style.color='#F57120'" onMouseOut="this.style.color='#3EA2FA'">Doxygen</a>
+				</p>
+					<img src="images/doxygen.png" alt="View of Index.html by Doxygen" style="width:900px; height:500px;"/>
+					<p style="text-align:center;">Figure 2: Example of Doxygen</p>
+				<h3>Data Structure</h3>
+				<p>
+					For this part, it will not only mention about data structure but also about algorithm, files I/O. 
+					<br/>
+					- Data structure will be the first thing to be mentioned relatively. For C++, there are three
+					types of containers: list, deque, and vector but list is mostly used in the system. For other professional developers, they would choose deque as the main container no matter what. For us, as amature developers,
+					we chose list instead of vector and deque because of some basic reasons. Firstly, by that time, the concept of deque container does not appear in our minds so that is the reason why we did not use it.
+					Both vector and list do have its own advantages and disadvantages. In my opinion, list is way better than vector in the system. The program need to make a lot of insertions/deletions of elements in the container, either end, or 
+					in the middle of it. By using list, the program does not waste as much memory as the vector need to add/remove element at the specific index. As far as we known from the research, list does allow to the program to iterate through it
+					after inserting/removing elements. Moreover, you can always keep track on the node before and after the chosen node. Beside list, we also use QList which is included in QT Library,
+					<br/>
+					- Algorithm will be the next topic. Instead of setting them up manually, we have included a standard library which is <span style="color:#8A8A5C; font-style:italic;"><algorigthm></span>. In this library, we used <span style="color:#8A8A5C; font-style:italic;">find()</span> and <span style="color:#8A8A5C; font-style:italic;">tolower()</span>
+					functions for our search function. For find() and contains() function, we has used it in our search method, which will list all elements if any properties of each contains the input. Furthermore, transform() and std::tolower are used to convert a string in lowercase. In order to calculate the difference
+					between date, we has implemented an algorithm, which is called Julian Day, to calculate. From that, the program can easily figure out a late return from the history.
+						<img src="images/julian.png" alt="A calculation for Julian Days" style="width:900px; height:700px;"/>
+						<p style="text-align:center;">Figure 3: Calculating Julian Day Function</p>
+						<img src="images/tolower.png" alt="Convert to lowercase function" style="width:900px; height:200px;"/>
+						<p style="text-align:center;">Figure 4: Convert to lowercase function</p>
+					<br/>
+					- For files I/O, we have used <span style="color:#8A8A5C; font-style:italic;">ifstream</span> for reading all data from files to load it into the database and <span style="color:#8A8A5C; font-style:italic;">ostream</span> to write data
+					back to files after every progress. These libraries are very common that there are tutorials about it on <a href="http://www.cplusplus.com/‎" style="text-decoration: none; color:#3EA2FA;" onMouseOver="this.style.color='#F57120'" onMouseOut="this.style.color='#3EA2FA'">C++ Resource Network</a>
+						<br/>The code fragment shown below is just a simple example of how to write/read from files
+						<img src="images/fstream.png" alt="Code Fragment - How to Read/Write to file" style="width:900px; height:600px;"/>
+						<p style="text-align:center;">Figure 5: Read/Write data to file</p>
+				</p>
+				<h2 id="feature">ADDITIONAL FEATURES</h2>
+				<hr style="color:#999999"/>
+
+				<h3>Interactive Menu</h3>
+				<p>
+					Instead of developing it with the CUI, we has chosen to develop with GUI. User can interact with the program directly by just clicking, moving. 
+					Everything is displayed neatly and simply. Some examples is shown below:
+				</p>
+					<img src="images/main.png" alt="Program - Main menu GUI" style="width:900px; height:500px;"/>
+					<p style="text-align:center;">Figure 6: Main menu GUI</p>
+					<img src="images/borrower.png" alt="Program - Add Borrower GUI" style="width:900px; height:600px;"/>
+					<p style="text-align:center;">Figure 7: Add New Borrower GUI</p>
+					<img src="images/collection.png" alt="Program - Add Collection GUI" style="width:900px; height:800px;"/>
+					<p style="text-align:center;">Figure 8: Add New Collection GUI</p>
+					<img src="images/report.png" alt="Program - Report GUI" style="width:900px; height:500px;"/>
+					<p style="text-align:center;">Figure 9: Report GUI</p>
+					<img src="images/menuBar.png" alt="Program - Menu bar & Shortcut" style="width:900px; height:500px;"/>
+					<p style="text-align:center;">Figure 10: Menu Bar and Shortcut</p>
+
+				<h3>Print Report</h3>
+				<p>
+					In order to satisfy all needs, a program also supports users to print out reports of all different types: borrowers, collections, and so on. Before printing out the report, users are able to preview it first by 
+					pressing <span style="color:#8A8A5C; font-style:italic;">"Preview"</span> button. After deciding the preview is actually the one a user want, press <span style="color:#8A8A5C; font-style:italic;">"ESC"</span> button to go 
+					back and press <span style="color:#8A8A5C; font-style:italic;">"Print"</span> button to start the printing process. An example is shown below.
+				</p>
+				<img src="images/print.png" alt="Program - Printing GUI" style="width:900px; height:500px;"/>
+				<p style="text-align:center;">Figure 10: Printing GUI</p>
+				
+				<h3>Save Report</h3>
+					<p>Press Save When viewing Report of collection, copies of collection and borrower</p>
+					<p>Project will generate a save dialog to save file as txt file</p>
+				
+				<h3>Database - MySql</h3>
+				<p>
+					Recently, there are variety of database management systems that developers can use to store application's data such as, mysql, sqlite, postgresql, and so on. MySQL and SqLite are the first two that came up
+					in our minds when we start to make a decision. Why? We have been using for a long time and they are quite easy to use. After throwing a big debate, MySql is finally the best fit with the system. In our point of view
+					sqlite is more vulnerable than mysql because it is a portable database management system. Since SqLite is portable, the database file obviously would be stored with the source code. In case that folder is in bad people's hands
+					they can all see data within a file by using free database readers such as sqliteman ... With MySql, there is no concern about that problem because it is protected with a password. 
+					<br/>
+					In this program, we use a mysql connector to connect it with MySql server. If the program is first installed in a organization's computers, it will automatically create a schema (mcdb), tables(borrower, multicollection, collection, ...)
+					, and some example data, which can be used for testing. The default account: <b>Username: </b><i>root</i> & <b>Password: </b><i>dhis</i>
+				</p>
+				
+				<h3>Sorting</h3>
+				<p>
+					As required, users will be able to sort some specific elements with the table. For this system, users are able to sort any type of the table, either in the ascending or descending order. All users need
+					to do is clicking on the title of each column.
+				</p>
+				<h3>Searching</h3>
+				<p>
+					Users are able to search a list by different types
+				</p>
+				
+				<h2 id="citation">CITATION</h2>
+				<hr style="color:#999999"/>
+				<ul>
+					<li>http://www.qtforum.org/article/27157/how-to-creat-open-save-dialog-with-qt-creator.html</li>
+					<li>http://harmattan-dev.nokia.com/docs/platform-api-reference/xml/daily-docs/libqt4/gettingstartedqt.html</li>
+					<li>http://answers.yahoo.com/question/index?qid=20120927094228AAagMFB</li>
+					<li>http://dev.mysql.com/doc/refman/5.1/en/connector-cpp-examples-complete-example-2.html</li>
+					<li>http://qt-project.org/forums/viewthread/29391</li>
+					<li>http://qt-project.org/doc/qt-4.8/printing.html</li>
+					<li>http://www.dazzle.plus.com/linux/Qt4/part12.htm</li>
+					<li>http://qt-project.org/doc/qt-4.8/widgets-groupbox.html</li>
+					<li>http://msdn.microsoft.com/en-us/library/ms646942%28VS.85%29.aspx</li>
+					<li>http://qt-project.org/forums/viewthread/328/</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
